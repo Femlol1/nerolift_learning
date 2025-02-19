@@ -50,7 +50,7 @@ export default function Home() {
 							Contact
 						</Link>
 					</nav>
-					<Button className="bg-teal-600 hover:bg-teal-700">Get Started</Button>
+					<Button className="bg-teal-600 hover:bg-teal-700">Book Now</Button>
 				</div>
 			</header>
 
@@ -93,7 +93,7 @@ export default function Home() {
 								</p>
 							</div>
 							<div className="bg-light-blue rounded-lg p-8">
-								<h3 className="text-xl font-semibold mb-4">Our Mission</h3>
+								<h3 className="text-xl font-semibold mb-4">Our Purpose</h3>
 								<p className="text-lg">
 									To empower individuals with cognitive challenges to reach
 									their full potential through innovative, science-based
