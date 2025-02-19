@@ -89,7 +89,7 @@ export default function Home() {
 								<p className="text-lg mb-4">
 									Our approach goes beyond traditional tutoring, offering
 									comprehensive solutions that are grounded in neuroscience and
-									tailored to each individual's unique needs.
+									tailored to each individual&apos;s unique needs.
 								</p>
 							</div>
 							<div className="bg-light-blue rounded-lg p-8">
@@ -148,7 +148,7 @@ export default function Home() {
 								},
 							].map((review, index) => (
 								<div key={index} className="bg-white p-6 rounded-lg shadow-md">
-									<p className="italic mb-4">"{review.text}"</p>
+									<p className="italic mb-4">&quot;{review.text}&quot;</p>
 									<p className="font-semibold">- {review.name}</p>
 								</div>
 							))}
