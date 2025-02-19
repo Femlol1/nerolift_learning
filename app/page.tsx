@@ -12,11 +12,11 @@ export default function Home() {
 					<Link href="/" className="flex items-center space-x-2">
 						<Image
 							src="/logo-placeholder.svg"
-							alt="NeuroLift Learning Logo"
+							alt="Logo"
 							width={40}
 							height={40}
 						/>
-						<span className="text-xl font-bold">NeuroLift Learning</span>
+						<span className="text-l font-bold">NeuroLift Learning</span>
 					</Link>
 					<nav className="hidden md:flex space-x-6">
 						<Link
