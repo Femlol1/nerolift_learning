@@ -73,7 +73,7 @@ export default function Home_Landing() {
 			<main className="container mx-auto px-4 py-20">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
 					<div className="relative w-full max-w-md">
-						<div className="relative overflow aspect-square">
+						<div className="relative  aspect-square">
 							<OverlappingCircles images={circleData} />
 						</div>
 					</div>

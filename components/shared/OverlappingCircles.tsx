@@ -23,7 +23,7 @@ const OverlappingCircles: React.FC<OverlappingCirclesProps> = ({ images }) => {
 				return (
 					<div
 						key={idx}
-						className="absolute rounded-full overflow-hidden"
+						className="absolute rounded-full overflow-visible"
 						style={{
 							width: diameter,
 							height: diameter,
@@ -36,10 +36,30 @@ const OverlappingCircles: React.FC<OverlappingCirclesProps> = ({ images }) => {
 						<Image
 							src={img.src}
 							alt={img.alt || ""}
-							className="relative inset-0 w-full h-full object-cover"
+							className="relative rounded-full inset-0 w-full h-full object-cover"
 							width={diameter}
 							height={diameter}
 						/>
+						{/* left overlapping circle */}
+						<div
+							className="absolute rounded-full border-2 border-blue-500"
+							style={{
+								width: diameter,
+								height: diameter,
+								top: "0%",
+								left: "-5%",
+							}}
+						></div>
+						{/* right overlapping circle */}
+						<div
+							className="absolute rounded-full border-2 border-green-500"
+							style={{
+								width: diameter,
+								height: diameter,
+								top: "0%",
+								left: "5%",
+							}}
+						></div>
 					</div>
 				);
 			})}
