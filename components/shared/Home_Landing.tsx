@@ -1,6 +1,6 @@
 "use client";
-import Link from "next/link";
 import Button from "./Button";
+import Header from "./Header";
 import OverlappingCircles from "./OverlappingCircles";
 
 export default function Home_Landing() {
@@ -8,7 +8,7 @@ export default function Home_Landing() {
 		{
 			src: "/assets/one.jpg",
 			top: "0%",
-			left: "0%",
+			left: "0",
 			size: 230,
 			zIndex: 10,
 		},
@@ -36,44 +36,12 @@ export default function Home_Landing() {
 	];
 
 	return (
-		<div className="min-h-screen">
-			<header className="container mx-auto px-4 py-6 flex justify-between items-center">
-				<div className="w-16 h-16 bg-black rounded-full"></div>
-				<nav>
-					<ul className="flex space-x-6 text-gray-800">
-						<li>
-							<Link href="/" className="font-medium">
-								Home
-							</Link>
-						</li>
-						<li>
-							<Link href="/about" className="font-medium">
-								About Us
-							</Link>
-						</li>
-						<li>
-							<Link href="/programs" className="font-medium">
-								Our Programs
-							</Link>
-						</li>
-						<li>
-							<Link href="/success-stories" className="font-medium">
-								Success Stories
-							</Link>
-						</li>
-						<li>
-							<Link href="/contact" className="font-medium">
-								Contact Us
-							</Link>
-						</li>
-					</ul>
-				</nav>
-			</header>
-
+		<section className="bg-contain">
+			<Header />
 			<main className="container mx-auto px-4 py-20">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
 					<div className="relative w-full max-w-md">
-						<div className="relative  aspect-square">
+						<div className="relative aspect-square scale-100 md:scale-100 sm:scale-50 lg:scale-100">
 							<OverlappingCircles images={circleData} />
 						</div>
 					</div>
@@ -101,6 +69,6 @@ export default function Home_Landing() {
 					</div>
 				</div>
 			</main>
-		</div>
+		</section>
 	);
 }

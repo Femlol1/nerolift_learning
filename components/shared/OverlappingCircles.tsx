@@ -23,7 +23,7 @@ const OverlappingCircles: React.FC<OverlappingCirclesProps> = ({ images }) => {
 				return (
 					<div
 						key={idx}
-						className="absolute rounded-full overflow-visible"
+						className="absolute rounded-full overflow-visible md:mx-0 mx-0 scale-75 md:scale-100"
 						style={{
 							width: diameter,
 							height: diameter,
