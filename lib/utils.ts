@@ -104,33 +104,13 @@ export const DefineMeta = (
 	// all description propertie set as array
 	title?: string,
 	description?: string,
-	pageUrl?: string,
-	openGraphImgUrl?: string
+	pageUrl?: string
 ) => {
 	description = sanitizeHtml(description);
 	const metadata: Metadata = {
-		metadataBase: new URL("https://www.kunlesgamesnight.com"),
-		title: `Kunle's Games Night ${title ? "| " + title : " "}`,
-		description: `${
-			description
-				? description
-				: `Your Ultimate Destination for Fun Game Nights and Events!
-
-Looking for an exciting night out with friends, family, or colleagues? Kunle's Games Night Company offers unforgettable game nights filled with laughter, friendly competition, and thrilling showdowns. Our gatherings are perfect for everyone, from casual players to serious gamers. Enjoy a vast selection of board games, card games, and interactive party games that bring people together. Whether you’re in the mood for classic games like Monopoly and Scrabble or newer, fast-paced options, there’s something for everyone at Kunle's Games Night!
-
-Why Choose Kunle's Games Night Company?
-Wide Game Variety: With games for all ages and skill levels, we ensure everyone has a blast.
-Inclusive Environment: Join a friendly community, whether you’re solo or with a group.
-Exciting Tournaments & Prizes: Enter fun competitions for a chance to win fantastic prizes.
-Snacks & Refreshments: Enjoy delicious food and drinks while you play.
-Expert Hosts: Our knowledgeable hosts create a fun, high-energy atmosphere from start to finish.
-Book Your Next Game Night Experience Today!
-Conveniently located in London, Kunle's Games Night Company is the go-to venue for birthdays, team-building events, and casual hangouts. With comfortable seating, lively décor, and friendly service, our game nights are the perfect blend of social interaction and entertainment.
-
-
-Follow us on Facebook, Instagram, and Twitter for the latest updates on upcoming game nights and special events. Join the excitement at Kunle's Games Night Company,where every night is a game night!`
-		}`,
-		applicationName: "Kunle's Games Night",
+		title: `Neurolift Learning ${title ? "| " + title : " "}`,
+		description: `${description ? description : `learn`}`,
+		applicationName: "Neurolift Learning",
 		creator: "Osifemi Osibemekun",
 		robots: {
 			index: true,
@@ -146,56 +126,19 @@ Follow us on Facebook, Instagram, and Twitter for the latest updates on upcoming
 			},
 		},
 		icons: {
-			icon: [
-				"/favicon.ico",
-				"/assets/images/logo.png",
-				"/favicon/android-chrome-512x512.png",
-				"/favicon/android-chrome-192x192.png",
-				"/favicon/apple-touch-icon.png",
-				"/favicon/favicon-16x16.png",
-				"/favicon/favicon-32x32.png",
-				"/favicon/favicon.ico",
-			],
+			icon: [{ url: "/favicon/favicon.ico", sizes: "any" }],
 			shortcut: ["/assets/images/logo.png"],
 			apple: "/favicon/apple-touch-icon.png",
 		},
 		keywords:
-			"events,kgn events, games night, fun, tickets, event details, kunles games, kunle's games, games, concerts, sports, tournaments, weekend events, saturday events, easter events, festivals, events in town, halloween, supernatural, play, game night, play games, games night in k, events in london,summer events, weekend events in k, events in london, summer events in k, winter events in k, saturday events in k, sunday events in k, easter events in k, winter events, KGN, kgn ",
-		manifest: "https://www.kunlesgamesnight.com/favicon/site.webmanifest",
+			"neurodiversity, neurodivergent, neurodiverse, autism, ADHD, dyslexia, learning disabilities, support, empowerment, community, events, games night, fun, social interaction",
 		openGraph: {
 			type: "website",
 			url: `${pageUrl ? pageUrl : "/"}`,
-			title: `KGN | ${title ? title : "Kunle's Games Night"}`,
+			title: `Neurolift Learning | ${title ? title : "Neurolift Learning"}`,
 			description: `${description}`,
-			siteName: "Kunle's Games Night",
+			siteName: "Neurolift Learning",
 			locale: "en_GB",
-
-			images: [
-				{
-					url: `${
-						openGraphImgUrl === undefined
-							? "https://www.kunlesgamesnight.com/assets/images/logo.png"
-							: openGraphImgUrl
-					}`,
-					alt: `${title ? title : "Kunle's Games Night"}`,
-					width: 1200,
-					height: 630,
-				},
-			],
-		},
-		twitter: {
-			card: "summary_large_image",
-			title: `KGN | ${title ? title : "Kunle's Games Night"}`,
-			site: `${pageUrl ? pageUrl : "/"}`,
-			creator: "@osifemi",
-			images: {
-				url: `${
-					openGraphImgUrl === undefined
-						? "https://www.kunlesgamesnight.com/assets/images/logo.png"
-						: openGraphImgUrl
-				}`,
-				alt: `${title ? title : "Kunle's Games Night"} Logo`,
-			},
 		},
 		assets: "/assets",
 		alternates: {
@@ -205,7 +148,7 @@ Follow us on Facebook, Instagram, and Twitter for the latest updates on upcoming
 				"de-DE": "/de-DE",
 			},
 		},
-		category: "event",
+		category: "learning",
 	};
 
 	return metadata;
