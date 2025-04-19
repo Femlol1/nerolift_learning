@@ -36,30 +36,32 @@ const OverlappingCircles: React.FC<OverlappingCirclesProps> = ({ images }) => {
 						<Image
 							src={img.src}
 							alt={img.alt || ""}
-							className="relative rounded-full inset-0 w-full h-full object-cover"
+							className="relative overflow-hidden rounded-full inset-0 w-full h-full object-cover"
 							width={diameter}
 							height={diameter}
 						/>
 						{/* left overlapping circle */}
-						<div
-							className="absolute rounded-full border-2 border-blue-500"
-							style={{
-								width: diameter,
-								height: diameter,
-								top: "0%",
-								left: "-5%",
-							}}
-						></div>
-						{/* right overlapping circle */}
-						<div
-							className="absolute rounded-full border-2 border-green-500"
-							style={{
-								width: diameter,
-								height: diameter,
-								top: "0%",
-								left: "5%",
-							}}
-						></div>
+						<div className="rotate-45 absolute inset-0 w-full h-full">
+							<div
+								className="absolute rounded-full border-2 border-blue-500"
+								style={{
+									width: diameter,
+									height: diameter,
+									top: "0%",
+									left: "-5%",
+								}}
+							></div>
+							{/* right overlapping circle */}
+							<div
+								className="absolute rounded-full border-2 border-green-500"
+								style={{
+									width: diameter,
+									height: diameter,
+									top: "0%",
+									left: "5%",
+								}}
+							></div>
+						</div>
 					</div>
 				);
 			})}
