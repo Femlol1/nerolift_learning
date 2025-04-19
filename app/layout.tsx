@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "NeuroLift Learning",
-	description: "NeuroLift Learning",
+	title: "Neurodiversity Support - Your Brain, Your Superpower",
+	description: "We celebrate neurodiversity and empower every learning need.",
 };
 
 export default function RootLayout({
