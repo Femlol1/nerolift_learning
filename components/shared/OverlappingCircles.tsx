@@ -32,27 +32,11 @@ const OverlappingCircles: React.FC<OverlappingCirclesProps> = ({ images }) => {
 							zIndex: img.zIndex ?? 0,
 						}}
 					>
-						{/* outer border */}
-						<div
-							className="absolute inset-0 rounded-full"
-							style={{
-								border: "4px solid #00C869",
-								transform: "scale(1.1)",
-							}}
-						/>
-						{/* middle border */}
-						<div
-							className="absolute inset-0 rounded-full"
-							style={{
-								border: "2px solid #2172FF",
-								transform: "scale(1.05)",
-							}}
-						/>
 						{/* image */}
 						<Image
 							src={img.src}
 							alt={img.alt || ""}
-							className="absolute inset-0 w-full h-full border-2 border-black object-cover"
+							className="relative inset-0 w-full h-full object-cover"
 							width={diameter}
 							height={diameter}
 						/>

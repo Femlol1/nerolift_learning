@@ -7,9 +7,9 @@ export default function Home_Landing() {
 	const circleData = [
 		{
 			src: "/assets/one.jpg",
-			top: "20%",
-			left: "10%",
-			size: 300,
+			top: "0%",
+			left: "0%",
+			size: 230,
 			zIndex: 10,
 		},
 		{
@@ -21,16 +21,16 @@ export default function Home_Landing() {
 		},
 		{
 			src: "/assets/three.jpg",
-			top: "15%",
-			left: "60%",
-			size: 220,
+			top: "25%",
+			left: "20%",
+			size: 300,
 			zIndex: 15,
 		},
 		{
 			src: "/assets/four.jpg",
-			top: "40%",
-			left: "35%",
-			size: 360,
+			top: "15%",
+			left: "60%",
+			size: 200,
 			zIndex: 5,
 		},
 	];
@@ -73,10 +73,7 @@ export default function Home_Landing() {
 			<main className="container mx-auto px-4 py-20">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
 					<div className="relative w-full max-w-md">
-						<div className="absolute inset-0 rounded-full border-4 border-blue-500 transform scale-110"></div>
-						<div className="absolute inset-0 rounded-full border-4 border-green-400 transform scale-105"></div>
-
-						<div className="relative rounded-full overflow-hidden aspect-square">
+						<div className="relative overflow aspect-square">
 							<OverlappingCircles images={circleData} />
 						</div>
 					</div>
