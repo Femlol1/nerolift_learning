@@ -28,7 +28,7 @@ export default function Home() {
 								href="#about"
 								className="text-sm font-medium hover:text-teal-600 transition-colors"
 							>
-								Abouts
+								About
 							</Link>
 							<Link
 								href="#services"
