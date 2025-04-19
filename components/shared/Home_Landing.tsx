@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./Button";
 
 export default function Home_Landing() {
 	return (
@@ -53,8 +55,8 @@ export default function Home_Landing() {
 						</div>
 					</div>
 
-					<div className="text-right max-w-xl">
-						<h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-800">
+					<div className="text-right">
+						<h1 className="text-xl md:text-2xl lg:text-7xl font-bold text-gray-800">
 							Your Brain,
 							<br />
 							Your <span className="text-blue-500">Superpower.</span>
@@ -64,13 +66,14 @@ export default function Home_Landing() {
 							<br />
 							every learning need.
 						</p>
+
 						<div className="mt-10 flex justify-end">
-							<Link
-								href="/consult"
-								className="px-8 py-4 text-xl font-bold bg-green-400 text-black rounded-full shadow-lg hover:bg-green-500 transition-colors border-2 border-black relative"
+							<Button
+								onClick={() => alert("Consult booked!")}
+								className=" border-black"
 							>
-								Book A Free Consult Today
-							</Link>
+								Book A Free Consult
+							</Button>
 						</div>
 					</div>
 				</div>
