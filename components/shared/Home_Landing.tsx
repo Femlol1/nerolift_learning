@@ -1,9 +1,40 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
+import OverlappingCircles from "./OverlappingCircles";
 
 export default function Home_Landing() {
+	const circleData = [
+		{
+			src: "/assets/one.jpg",
+			top: "20%",
+			left: "10%",
+			size: 300,
+			zIndex: 10,
+		},
+		{
+			src: "/assets/two.jpg",
+			top: "60%",
+			left: "5%",
+			size: 200,
+			zIndex: 20,
+		},
+		{
+			src: "/assets/three.jpg",
+			top: "15%",
+			left: "60%",
+			size: 220,
+			zIndex: 15,
+		},
+		{
+			src: "/assets/four.jpg",
+			top: "40%",
+			left: "35%",
+			size: 360,
+			zIndex: 5,
+		},
+	];
+
 	return (
 		<div className="min-h-screen">
 			<header className="container mx-auto px-4 py-6 flex justify-between items-center">
@@ -44,14 +75,9 @@ export default function Home_Landing() {
 					<div className="relative w-full max-w-md">
 						<div className="absolute inset-0 rounded-full border-4 border-blue-500 transform scale-110"></div>
 						<div className="absolute inset-0 rounded-full border-4 border-green-400 transform scale-105"></div>
+
 						<div className="relative rounded-full overflow-hidden aspect-square">
-							<Image
-								src="/placeholder.svg?height=500&width=500"
-								alt="Students reading together"
-								width={500}
-								height={500}
-								className="object-cover w-full h-full grayscale"
-							/>
+							<OverlappingCircles images={circleData} />
 						</div>
 					</div>
 
