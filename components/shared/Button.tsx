@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
 		className={`
       inline-block
       bg-white
-      text-[#00C869]
+      
       font-lg
       text-3xl
       rounded-lg

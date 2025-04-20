@@ -7,9 +7,10 @@ export default function ComparisonTable() {
 	const [expanded, setExpanded] = useState(false);
 
 	return (
-		<div className="w-full bg-gray-900 text-white p-6 md:p-12 rounded-lg">
+		<div className="w-full bg-[#2D2D2D] text-white p-6 md:p-12 rounded-lg">
 			<h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
-				NeuroLift vs Traditional Learning
+				<span className="text-green-400">NeuroLift</span> vs Traditional
+				Learning
 			</h1>
 
 			<div className="overflow-x-auto">
@@ -19,7 +20,7 @@ export default function ComparisonTable() {
 							<th className="py-4 px-2 text-left w-1/4 text-gray-300">
 								Features
 							</th>
-							<th className="py-4 px-2 text-left w-2/5 text-green-400 font-medium">
+							<th className="py-4 px-2 text-left w-2/5 text-grey-300 font-medium border-x-2 border-gray-700">
 								Neurolift Learning
 							</th>
 							<th className="py-4 px-2 text-left w-2/5 text-white font-medium">
@@ -31,11 +32,13 @@ export default function ComparisonTable() {
 						{/* Core Learning */}
 						<tr className="border-b border-gray-700">
 							<td className="py-4 px-2 align-top">
-								<span className="text-blue-400 font-medium">Core Learning</span>
+								<span className="text-green-400 font-medium">
+									Core Learning
+								</span>
 							</td>
-							<td className="py-4 px-2 align-top">
+							<td className="py-4 px-2 align-top border-x-2 border-gray-700">
 								Focuses on{" "}
-								<span className="text-blue-400">
+								<span className="text-green-400">
 									comprehension over memorization
 								</span>
 								, enhancing critical thinking, problem-solving, and long-term
@@ -49,20 +52,20 @@ export default function ComparisonTable() {
 
 						{/* Approach to Learning */}
 						<tr className="border-b border-gray-700">
-							<td className="py-4 px-2 align-top">
-								<span className="text-blue-400 font-medium">
+							<td className="py-4 px-2 align-top ">
+								<span className="text-green-400 font-medium">
 									Approach to Learning
 								</span>
 							</td>
-							<td className="py-4 px-2 align-top">
+							<td className="py-4 px-2 align-top border-x-2 border-gray-700">
 								Uses brain-gym training,{" "}
-								<span className="text-blue-400">cognitive exercises</span>, and
+								<span className="text-green-400">cognitive exercises</span>, and
 								neuroscience-backed techniques to optimise learning efficiency
 								and cognitive function.
 							</td>
 							<td className="py-4 px-2 align-top">
 								Relies on passive learning, such as{" "}
-								<span className="text-blue-400">
+								<span className="text-green-400">
 									lectures, textbooks, and repetitive practice
 								</span>
 								, which may not cater to different learning styles.
@@ -72,13 +75,13 @@ export default function ComparisonTable() {
 						{/* Cognitive Development */}
 						<tr className="border-b border-gray-700">
 							<td className="py-4 px-2 align-top">
-								<span className="text-blue-400 font-medium">
+								<span className="text-green-400 font-medium">
 									Cognitive Development
 								</span>
 							</td>
-							<td className="py-4 px-2 align-top">
+							<td className="py-4 px-2 align-top border-x-2 border-gray-700">
 								Actively{" "}
-								<span className="text-blue-400">
+								<span className="text-green-400">
 									enhances memory, attention, and processing speed
 								</span>{" "}
 								through targeted cognitive exercises.
@@ -92,15 +95,15 @@ export default function ComparisonTable() {
 						{/* Scientific Foundation */}
 						<tr className="border-b border-gray-700">
 							<td className="py-4 px-2 align-top">
-								<span className="text-blue-400 font-medium">
+								<span className="text-green-400 font-medium">
 									Scientific Foundation
 								</span>
 							</td>
-							<td className="py-4 px-2 align-top">
+							<td className="py-4 px-2 align-top border-x-2 border-gray-700">
 								Grounded in{" "}
-								<span className="text-blue-400">neuroscientific research</span>,
-								ensuring learning strategies align with how the brain processes,
-								retains, and recalls information.
+								<span className="text-green-400">neuroscientific research</span>
+								, ensuring learning strategies align with how the brain
+								processes, retains, and recalls information.
 							</td>
 							<td className="py-4 px-2 align-top">
 								Often based on traditional educational methods, with limited
@@ -111,13 +114,13 @@ export default function ComparisonTable() {
 						{/* Personalisation */}
 						<tr className={expanded ? "border-b border-gray-700" : ""}>
 							<td className="py-4 px-2 align-top">
-								<span className="text-blue-400 font-medium">
+								<span className="text-green-400 font-medium">
 									Personalisation
 								</span>
 							</td>
-							<td className="py-4 px-2 align-top">
+							<td className="py-4 px-2 align-top border-x-2 border-gray-700">
 								Uses{" "}
-								<span className="text-blue-400">
+								<span className="text-green-400">
 									adaptive learning technology
 								</span>{" "}
 								to tailor training to individual cognitive strengths and
@@ -135,13 +138,13 @@ export default function ComparisonTable() {
 								{/* Additional rows that would be shown when expanded */}
 								<tr className="border-b border-gray-700">
 									<td className="py-4 px-2 align-top">
-										<span className="text-blue-400 font-medium">
+										<span className="text-green-400 font-medium">
 											Learning Environment
 										</span>
 									</td>
-									<td className="py-4 px-2 align-top">
+									<td className="py-4 px-2 align-top border-x-2 border-gray-700">
 										Creates{" "}
-										<span className="text-blue-400">
+										<span className="text-green-400">
 											engaging, interactive environments
 										</span>{" "}
 										that stimulate multiple senses and promote active
@@ -153,14 +156,14 @@ export default function ComparisonTable() {
 									</td>
 								</tr>
 								<tr className="border-b border-gray-700">
-									<td className="py-4 px-2 align-top">
-										<span className="text-blue-400 font-medium">
+									<td className="py-4 px-2 align-top ">
+										<span className="text-green-400 font-medium">
 											Progress Tracking
 										</span>
 									</td>
-									<td className="py-4 px-2 align-top">
+									<td className="py-4 px-2 align-top border-x-2 border-gray-700">
 										Utilizes{" "}
-										<span className="text-blue-400">
+										<span className="text-green-400">
 											detailed analytics and metrics
 										</span>{" "}
 										to track cognitive improvement and learning progress in
@@ -185,7 +188,7 @@ export default function ComparisonTable() {
 			>
 				<span className="mr-2">READ MORE</span>
 				<ChevronDown
-					className={`w-4 h-4 transition-transform ${
+					className={`w-4 h-4 transition-transform text-green-400 ${
 						expanded ? "rotate-180" : ""
 					}`}
 				/>

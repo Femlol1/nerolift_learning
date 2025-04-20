@@ -1,6 +1,11 @@
+import CardDiagram from "@/components/shared/Cards";
 import ComparisonTable from "@/components/shared/Comparison_Table";
+import ContactUsFooter from "@/components/shared/Contact_Us";
 import Experience from "@/components/shared/Experience";
 import Home_Landing from "@/components/shared/Home_Landing";
+import OurApproaches from "@/components/shared/OurApproaches";
+import SuccessStoryCarousel from "@/components/shared/Success_Stories";
+import Why_Us from "@/components/shared/Why_Us";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,7 +17,12 @@ export default function Home() {
 		<>
 			<Home_Landing />
 			<Experience />
+			<Why_Us />
+			<OurApproaches />
 			<ComparisonTable />
+			<CardDiagram />
+			<SuccessStoryCarousel />
+			<ContactUsFooter />
 			<div className="flex flex-col min-h-screen">
 				<header className="sticky top-0 z-50 w-full border-b bg-white">
 					<div className="container flex h-16 items-center justify-between">

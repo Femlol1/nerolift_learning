@@ -13,9 +13,13 @@ interface CircleImage {
 
 interface OverlappingCirclesProps {
 	images: CircleImage[];
+	rotate?: string;
 }
 
-const OverlappingCircles: React.FC<OverlappingCirclesProps> = ({ images }) => {
+const OverlappingCircles: React.FC<OverlappingCirclesProps> = ({
+	images,
+	rotate,
+}) => {
 	return (
 		<div className="relative w-full h-full">
 			{images.map((img, idx) => {
@@ -41,7 +45,7 @@ const OverlappingCircles: React.FC<OverlappingCirclesProps> = ({ images }) => {
 							height={diameter}
 						/>
 						{/* left overlapping circle */}
-						<div className="rotate-45 absolute inset-0 w-full h-full">
+						<div className={`absolute inset-0 w-full h-full ${rotate}`}>
 							<div
 								className="absolute rounded-full border-2 border-blue-500"
 								style={{

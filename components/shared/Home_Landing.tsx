@@ -42,7 +42,7 @@ export default function Home_Landing() {
 				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
 					<div className="relative w-full max-w-md">
 						<div className="relative aspect-square scale-75 md:scale-100 ">
-							<OverlappingCircles images={circleData} />
+							<OverlappingCircles images={circleData} rotate="rotate-45" />
 						</div>
 					</div>
 
@@ -61,7 +61,7 @@ export default function Home_Landing() {
 						<div className="mt-10 flex justify-end">
 							<Button
 								onClick={() => alert("Consult booked!")}
-								className=" border-black"
+								className=" border-black text-[#00C869]"
 							>
 								Book A Free Consult
 							</Button>
