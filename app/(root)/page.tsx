@@ -1,4 +1,5 @@
 import ComparisonTable from "@/components/shared/Comparison_Table";
+import Experience from "@/components/shared/Experience";
 import Home_Landing from "@/components/shared/Home_Landing";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,6 +11,7 @@ export default function Home() {
 	return (
 		<>
 			<Home_Landing />
+			<Experience />
 			<ComparisonTable />
 			<div className="flex flex-col min-h-screen">
 				<header className="sticky top-0 z-50 w-full border-b bg-white">

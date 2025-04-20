@@ -36,12 +36,12 @@ export default function Home_Landing() {
 	];
 
 	return (
-		<section className="bg-contain">
+		<section className="">
 			<Header />
 			<main className="container mx-auto px-4 py-20">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
 					<div className="relative w-full max-w-md">
-						<div className="relative aspect-square scale-100 md:scale-100 sm:scale-50 lg:scale-100">
+						<div className="relative aspect-square scale-75 md:scale-100 ">
 							<OverlappingCircles images={circleData} />
 						</div>
 					</div>
