@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import Button from "@/components/shared/Button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -112,18 +112,13 @@ export default function ConsultationForm({ onClose }: ConsultationFormProps) {
 			</div>
 
 			<div className="flex gap-4 justify-end pt-4">
-				<Button
-					type="button"
-					variant="outline"
-					onClick={onClose}
-					disabled={isSubmitting}
-				>
+				<Button type="button" onClick={onClose} disabled={isSubmitting}>
 					Cancel
 				</Button>
 				<Button
 					type="submit"
 					disabled={isSubmitting}
-					className="bg-[#00C869] hover:bg-[#00b05e] text-white"
+					className="bg-[#00C869] hover:bg-[#00b05e] text-green-500 hover:text-white text-lg font-bold rounded-lg px-4 py-3 shadow-[6px_6px_0_rgba(0,0,0)] hover:shadow-[3px_3px_0_rgba(0,0,0)] transition-shadow border-2 border-black"
 				>
 					{isSubmitting ? "Submitting..." : "Book Consultation"}
 				</Button>
