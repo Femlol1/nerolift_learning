@@ -1,9 +1,15 @@
 "use client";
+import { useState } from "react";
 import Button from "./Button";
+import ConsultationModal from "./ConsultationModal";
 import Header from "./Header";
 import OverlappingCircles from "./OverlappingCircles";
 
 export default function Home_Landing() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	const openModal = () => setIsModalOpen(true);
+	const closeModal = () => setIsModalOpen(false);
 	const circleData = [
 		{
 			src: "/assets/one.jpg",
@@ -60,7 +66,7 @@ export default function Home_Landing() {
 
 						<div className="mt-10 flex justify-end">
 							<Button
-								onClick={() => alert("Consult booked!")}
+								onClick={openModal}
 								className=" border-black text-[#00C869]"
 							>
 								Book A Free Consult
@@ -69,6 +75,8 @@ export default function Home_Landing() {
 					</div>
 				</div>
 			</main>
+			{/* Consultation Modal */}
+			<ConsultationModal isOpen={isModalOpen} onClose={closeModal} />
 		</section>
 	);
 }
