@@ -1,4 +1,4 @@
-// src/components/OurApproaches.tsx
+//@components/OurApproaches.tsx
 import React from "react";
 import { FaDumbbell, FaMicroscope, FaUsers } from "react-icons/fa";
 import OverlappingCircles from "./OverlappingCircles";

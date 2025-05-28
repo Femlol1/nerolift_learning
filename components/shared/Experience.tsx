@@ -1,3 +1,5 @@
+//@component/shared/Experience.tsx
+
 const Experience = () => {
 	return (
 		<section

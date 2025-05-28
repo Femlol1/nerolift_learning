@@ -109,3 +109,15 @@ body {
 .hover\:bg-teal-700:hover {
 	background-color: #238b7e;
 }
+
+/* NLL bg vector 6 */
+.bg-nll-vector-6 {
+	background-image: url("/nll-bg-vector-6.svg");
+	position: absolute;
+	width: 647.31px;
+	height: 907.87px;
+	left: 564px;
+	top: 1675.24px;
+
+	transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
+}

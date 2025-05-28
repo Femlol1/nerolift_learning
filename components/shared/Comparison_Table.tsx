@@ -1,3 +1,4 @@
+//@component/shared/Comparison_Table.tsx
 "use client";
 
 import { ChevronDown } from "lucide-react";

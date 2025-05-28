@@ -1,4 +1,4 @@
-// src/components/CardDiagram.tsx
+//@components/CardDiagram.tsx
 import React from "react";
 
 const CardDiagram: React.FC = () => {

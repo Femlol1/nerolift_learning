@@ -1,3 +1,4 @@
+//@component/shared/Home_Landing.tsx
 "use client";
 import { useState } from "react";
 import Button from "./Button";
@@ -43,6 +44,21 @@ export default function Home_Landing() {
 
 	return (
 		<section className="">
+			<div
+				style={{
+					position: "fixed", // or "absolute" if you prefer relative to <section>
+					top: 0,
+					left: 0,
+					width: "100vw",
+					height: "150vh",
+					backgroundImage: "url('/assets/nll-bg-vector-2.svg')",
+					backgroundRepeat: "no-repeat",
+					backgroundSize: "cover",
+					backgroundPosition: "center",
+
+					zIndex: -10,
+				}}
+			/>
 			<Header />
 			<main className="container mx-auto px-4 py-20">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-12">

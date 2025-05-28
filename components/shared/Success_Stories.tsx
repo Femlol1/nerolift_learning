@@ -1,4 +1,4 @@
-// src/components/shared/SuccessStoryCarousel.tsx
+//@components/shared/Success_Stories.tsx
 "use client";
 import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";

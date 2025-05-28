@@ -1,4 +1,4 @@
-// components/shared/OverlappingCircles.tsx
+//@components/shared/OverlappingCircles.tsx
 import Image from "next/image";
 import React from "react";
 

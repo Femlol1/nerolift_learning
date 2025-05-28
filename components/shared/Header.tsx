@@ -6,12 +6,28 @@ const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<header className="container mx-auto px-4 py-6 flex justify-between items-center bg-white ">
-			<div className="w-12 h-12 md:w-16 md:h-16 rounded-full">
+		<header className="container mx-auto px-4 py-6 flex justify-between items-center bg-transparent">
+			<div className="flex flex-row">
 				<Image
-					src="/assets/profile.jpg"
+					src="/assets/logo.png"
 					alt="Logo"
-					className="rounded-full"
+					className=" w-12 h-12 md:w-16 md:h-16 rounded-full"
+					loading="eager"
+					quality={100}
+					placeholder="blur"
+					blurDataURL="/assets/logo.png"
+					width={64}
+					height={64}
+					priority
+				/>
+				<Image
+					src="/assets/name.png"
+					alt="name"
+					className="ml-2 w-10 h-10 md:w-16 md:h-16"
+					loading="eager"
+					quality={100}
+					placeholder="blur"
+					blurDataURL="/assets/logo.png"
 					width={64}
 					height={64}
 					priority
