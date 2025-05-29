@@ -43,7 +43,7 @@ export default function Home_Landing() {
 	];
 
 	return (
-		<section className="">
+		<section className="min-h-screen">
 			<div
 				style={{
 					position: "fixed", // or "absolute" if you prefer relative to <section>
@@ -60,30 +60,31 @@ export default function Home_Landing() {
 				}}
 			/>
 			<Header />
-			<main className="container mx-auto px-4 py-20">
-				<div className="flex flex-col md:flex-row items-center justify-between gap-12">
-					<div className="relative w-full max-w-md">
-						<div className="relative aspect-square scale-75 md:scale-100 ">
+			<main className="container mx-auto px-4 py-8 sm:py-12 md:py-20">
+				<div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 min-h-[calc(100vh-200px)]">
+					<div className="relative w-full max-w-sm sm:max-w-md order-2 md:order-1">
+						<div className="relative aspect-square scale-75 sm:scale-90 md:scale-100">
 							<OverlappingCircles images={circleData} rotate="rotate-45" />
 						</div>
 					</div>
 
-					<div className="text-right">
-						<h1 className="text-xl md:text-2xl lg:text-7xl font-bold text-gray-800">
+					<div className="text-center md:text-right order-1 md:order-2 space-y-4 sm:space-y-6">
+						<h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold text-gray-800 leading-tight">
 							Your Brain,
 							<br />
-							Your <span className="text-blue-500">Superpower.</span>
+							Your{" "}
+							<span className="text-blue-500">Superpower.</span>
 						</h1>
-						<p className="mt-6 text-xl md:text-2xl text-gray-700">
+						<p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 max-w-lg mx-auto md:mx-0">
 							We celebrate neurodiversity and empower
-							<br />
+							<br className="hidden sm:block" />
 							every learning need.
 						</p>
 
-						<div className="mt-10 flex justify-end">
+						<div className="pt-4 sm:pt-6 md:pt-10 flex justify-center md:justify-end">
 							<Button
 								onClick={openModal}
-								className=" border-black text-[#00C869]"
+								className="border-black text-[#00C869] px-6 py-3 text-sm sm:text-base"
 							>
 								Book A Free Consult
 							</Button>

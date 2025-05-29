@@ -4,7 +4,7 @@ import ContactUsFooter from "@/components/shared/Contact_Us";
 import Experience from "@/components/shared/Experience";
 import Home_Landing from "@/components/shared/Home_Landing";
 import OurApproaches from "@/components/shared/OurApproaches";
-import SuccessStoryCarousel from "@/components/shared/Success_Stories";
+import Testimonials from "@/components/shared/Testimonials";
 import Why_Us from "@/components/shared/Why_Us";
 
 export default function Home() {
@@ -16,7 +16,8 @@ export default function Home() {
 			<OurApproaches />
 			<ComparisonTable />
 			<CardDiagram />
-			<SuccessStoryCarousel />
+			{/* <SuccessStoryCarousel /> */}
+			<Testimonials />
 			<ContactUsFooter />
 		</>
 	);

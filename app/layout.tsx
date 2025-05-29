@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
 	title: "Neurodiversity Support - Your Brain, Your Superpower",
 	description: "We celebrate neurodiversity and empower every learning need.",
+	viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
